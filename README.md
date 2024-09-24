@@ -1,2 +1,4 @@
-# cosinus-project
-School project
+# School project
+## Artem S.
+## Oleksandr K.
+## Oleksii S.
