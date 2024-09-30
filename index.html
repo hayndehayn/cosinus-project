@@ -6,20 +6,60 @@
     <title>Project</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
 </head>
-<body>
-    <!--TODO: Зробити щоб елементи були посередині -->
-    <!--TODO: Виправити svg, поміняти місцями -->
-    <header class="mx-auto px-4 py-14 bg-stone-800">
-        <section class="flex just justify-center space-x-12 item-center items-stretch">
-            <a class="px-2 py-2 hover:bg-stone-900 rounded-2xl" href="#">
-                <img src="/assets/img/arrow-right.svg" width="70" alt="arrow-right"> 
+<body class="flex flex-col">
+    <header class="py-6 bg-stone-800 sticky">
+        <nav class="flex justify-center space-x-12 item-center">
+            <a class="px-2 py-2 hover:bg-stone-900 rounded-2xl hover:border-2 hover:border-zinc-100" href="#">
+                <img src="assets/img/arrow-left.svg" width="70" alt="arrow-left">
             </a>
-            <h1 class="flex text-6xl text-white font-[Medium]">Porównanie</h1> 
-            <a class="px-2 py-2 hover:bg-stone-900 rounded-2xl" href="#">
-                <img src="/assets/img/arrow-left.svg" width="70" alt="arrow-left">
+            <h1 class="text-7xl text-white font-[Medium]">Main page</h1>
+            <a class=" px-2 py-2 rounded-2xl hover:bg-stone-900 hover:border-2 hover:border-zinc-100" href="#">
+                <img src="assets/img/arrow-right.svg" width="70" alt="arrow-right">
             </a>
-        </section>
+        </nav>
     </header>
+    <main class="py-2 bg-stone-600 grow">
+        <h2 class="flex justify-center text-4xl text-white font-[Medium] py-12">Porównanie obiektowości w językach:</h2>
+        <div class="flex justify-center flex-cols gap-4">
+            <div class="flex flex-col items-center bg-stone-800 px-4 py-4 rounded-xl">
+                <img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'
+                    width="200" alt="js logo">
+                <a class="text-white text-2xl py-2" href="">JavaScript</a>
+            </div>
+            <div class="flex flex-col items-center bg-stone-800 px-4 py-4 rounded-xl">
+                <img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg'
+                    width="200" alt="cpp logo">
+                <a class="text-white text-2xl py-2" href="">C++</a>
+            </div>
+            <div class="flex flex-col items-center bg-stone-800 px-4 py-4 rounded-xl">
+                <img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg' width="200"
+                    alt="csharp logo">
+                <a class="text-white text-2xl py-2" href="">C#</a>
+            </div>
+            <div class="flex flex-col items-center bg-stone-800 px-4 py-4 rounded-xl">
+                <img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' width="200"
+                    alt="python logo">
+                <a class="text-white text-2xl py-2" href="">Python</a>
+            </div>
+            <div class="flex flex-col items-center bg-stone-800 px-4 py-4 rounded-xl">
+                <img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg' width="200"
+                    alt="java logo">
+                <a class="text-white text-2xl py-2" href="">Java</a>
+            </div>
+            <div class="flex flex-col items-center bg-stone-800 px-4 py-4 rounded-xl">
+                <img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg' width="200"
+                    alt="php logo">
+                <a class="text-white text-2xl py-2" href="">PHP</a>
+            </div>
+        </div>
+
+    </main>
+    <footer class="flex justify-center gap-4 bg-stone-800 py-8">
+        <a class="text-white text-2xl" href="#">Author</a>
+        <a class="text-white text-2xl" href="#">Second</a>
+        <a class="text-white text-2xl" href="#">Third</a>
+    </footer>
 </body>
 </html>
