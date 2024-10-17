@@ -1,5 +1,4 @@
-const first_button = document.getElementById('openPageButton')
 
-first_button.addEventListener('click', function() {
-    window.location.href = '/pages/first.html';
-});
+function change_page(path_to) { // Zmienia strone
+    window.location.href = "./pages/" + path_to + '.html'
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+</head>
+
+<body class="h-16">
+    <header class="mx-auto w-auto py-6 bg-[url('../assets/img/header_bg.webp')]" style="background-color: rgb(61, 61, 61);">
+        <div class="flex flex-col justify-center items-center py-[365px]">
+            <div class="button py-6">
+                <button id="homeButton" class="py-10 mt-5 px-20 text-white text-2xl font-[Bold] hover:bg-neutral-900 ease-in rounded-2xl bg-zinc-800">Home</button>
+            </div>
+        </div>
+    
+    </header>
+    <main class="mx-auto py-4 bg-neutral-600" id="bottom">
+        <h2 class="flex justify-center text-4xl text-white font-[Medium] py-12">C# vs. Python</h2>
+        <div class="flex justify-center items-center gap-4 flex-col" style="padding: 0 15% 0 15%;">
+            <p class="flex justify-center text-2xl text-white font-[Medium] py-12">Python to interpretowany, zorientowany obiektowo język programowania wysokiego poziomu z dynamiczną semantyką. 
+                Jego wysokopoziomowe wbudowane struktury danych, w połączeniu z dynamicznym typowaniem i dynamicznym wiązaniem, sprawiają, że jest bardzo atrakcyjny do szybkiego tworzenia aplikacji, a także do wykorzystania jako język skryptowy lub klejenie do łączenia ze sobą istniejących komponentów. 
+                Prosta, łatwa do nauczenia składnia Pythona kładzie nacisk na czytelność, a tym samym zmniejsza koszty utrzymania programu. Python obsługuje moduły i pakiety, co zachęca do modularności programu i ponownego użycia kodu. Interpreter Pythona i obszerna biblioteka standardowa są dostępne w formie źródłowej lub binarnej bez opłat dla wszystkich głównych platform i mogą być swobodnie dystrybuowane.
+            </p>
+            <ul class="text-2xl text-white font-[Medium] py-12" style="list-style-type: disc;">
+                <li>Wydajność</li>
+                <p>C# jest generalnie szybszy niż Python, ponieważ jest językiem kompilowanym. Python jest językiem interpretowanym, co oznacza, że jest wolniejszy niż C#.</p>
+                <li>System typów</li>
+                <p>Python jest językiem typowanym dynamicznie, co oznacza, że typ zmiennej jest określany w czasie wykonywania. Z drugiej strony C# jest językiem statycznie typowanym, co oznacza, że typ zmiennej jest określany w czasie kompilacji.</p>
+                <li>Odzyskiwanie pamięci</li>
+                <p>Python ma automatyczny system odzyskiwania pamięci, co oznacza, że automatycznie zwalnia pamięć. Z drugiej strony język C# ma również system odzyskiwania pamięci, ale wymaga on więcej ręcznej interwencji, aby efektywnie zarządzać pamięcią.</p>
+                <li>Deklaracja klasy</li>
+                <p>Klasy w C# muszą być jawnie zadeklarowane z określeniem modyfikatorów dostępu (np. public, private, internal).</p>
+                <p>W pythonie klasy są definiowane przy użyciu słowa kluczowego class, ale nie wymaga się modyfikatorów dostępu.</p>
+                <li>Dziedziczenie</li>
+                <p>W C# dziedziczenie jest jawne i można dziedziczyć tylko po jednej klasie (brak wielodziedziczenia), ale możliwe jest dziedziczenie po wielu interfejsach. Python z innej strony obsługuje wielodziedziczenie</p>
+                <li>Polimorfizm</li>
+                <p>W C# polimorfizm jest uzyskiwany za pomocą dziedziczenia i interfejsów. Metody wirtualne i nadpisywanie pozwalają na dynamiczne dostosowywanie metod w klasach pochodnych.</p>
+                <p>Python obsługuje polimorfizm naturalnie dzięki dynamicznemu typowaniu. Każdy obiekt może być używany, o ile implementuje odpowiednie metody, co daje dużą elastyczność.</p>
+                <li>Interfejsy</li>
+                <p>W C# interfejsy są oddzielnym typem definiującym kontrakt, który klasy mogą implementować</p>
+                <p>Python nie posiada natywnych interfejsów. Zamiast tego można używać mechanizmów takich jak abc (Abstract Base Class) do definiowania interfejsów</p>
+            </ul>
+            <button class="py-5 mt-5 px-10 text-white text-2xl font-[Bold] hover:bg-neutral-900 ease-in rounded-2xl bg-zinc-800" onclick="scroll_to_top()">W górę</button>
+        </div>
+    </main>
+    
+    <footer class="mx-auto flex justify-center gap-4 bg-stone-800 py-8">
+        <a class="text-white text-xl font-[Medium]" href="https://github.com/hayndehayn">Artem Strokan</a>
+        <a class="text-white text-xl font-[Medium]" href="https://github.com/SANCHOS4004">Oleksandr Kryvoviaz</a>
+        <a class="text-white text-xl font-[Medium]" href="#">Oleksii Surovytskii</a>
+    </footer>
+
+    <script src="../js/pages.js"></script>
+</body>
+</html>
